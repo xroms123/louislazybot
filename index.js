@@ -11,8 +11,8 @@ bot.on('message', function (event) {
     if (event.message.type = 'text') {
         var msg = event.message.text;
         if (msg.includes("hi") || msg.includes("hello") || msg.includes("你好")) {
-            event.reply(msg).then(function (data) {
-                console.log('Bonjour ca va bien?')
+            event.reply("Bonjour ca va bien?").then(function (data) {
+                console.log(msg)
             }).catch(function (error) {
                 console.log(error)
             })
